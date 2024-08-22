@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyalphabetic Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Polyalphabetic Cipher</h1>
+        <div class="mode-switch">
+            <label><input type="radio" name="mode" id="encrypt-mode" checked> Encode</label>
+            <label><input type="radio" name="mode" id="decrypt-mode"> Decode</label>
+        </div>
+        <div class="form-group">
+            <label for="plaintext">Plain Text:</label>
+            <textarea id="plaintext" placeholder="Enter text here..."></textarea>
+        </div>
+        <button id="process-btn" onclick="processText()">Process</button>
+        <div class="output">
+            <h2>Result:</h2>
+            <p id="outputText"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
